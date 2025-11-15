@@ -1,0 +1,96 @@
+html{
+    /*Utilizar variables*/
+
+    --fontTitle: "Roboto", sans-serif;
+    --generalFont: "Raleway", sans-serif;
+
+    --bgColor: #FFC400;
+    --hgColor: #450693;
+    --primaryColor: #FF3F7F;
+    --secondaryColor: #8C00FF
+}
+
+/* Color del body + fuentes paa titulos*/
+
+body{
+    background-color: var(--bgColor);
+    color: var(--hgColor);
+}
+
+.pageTitle{
+    font-family: var(--fontTitle);
+}
+
+a{
+    font-size: 20px;
+    color: var(--hgColor);
+    text-decoration: none;
+    background-color: var(--secondaryColor);
+    padding: 2.5px;
+    border-radius: 5px;
+}
+
+a:hover{
+    font-size: 25px;
+    padding: 5px;
+}
+/* Estilos para Barra de Navegación*/
+
+nav#navBar{
+    background-color: var(--primaryColor);
+    display: grid;
+    grid-template-columns: 100px auto auto;
+    align-items: center;
+
+}
+ul#navLinks{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: end;
+}
+
+li.navBarItem{
+    margin: 0px 5px 0px 5px;
+}
+
+/*Estilo para la seccion Hero*/
+.hero-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/*Estilo estandar para tarjetas de productos*/
+div.cardProduct{
+    background-color: var(--primaryColor);
+    align-content: center;
+    text-align: center;
+    width: 300px;
+    height: 325px;
+    border-radius: 10px;
+    margin: 25px 0px 25px 0px;
+
+}
+
+div.productRow{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.productRow{
+    display:flex;
+    gap: 20px ;
+}
+
+
+
+

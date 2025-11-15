@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla | Carrito</title>
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="stylesheet" href="./css/main.css">
+    
+
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid white;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Barra de navegacioón-->
+    <header>
+        <nav id="navBar">
+            <img src="./assets/logo.png" alt="Logo del negocio" width="50">
+            <h1 id="mainTitle" class="pageTitle">Stargirl</h1>
+
+            <ul id="navLinks">
+                <li class="navBarItem"> <a href="./contacto.html">contacto</a></li>
+                <li class="navBarItem"> <a href="./productos.html">Productos</a> </li>
+                <li class="navBarItem"> <a href="./carrito.html">Carrito</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>Carrito de compras</h2>
+
+    <section id="carrito" style="background-color: var(--color-secundario);">
+        <div class="container">
+            <h2 class="text-center mb-5 text-uppercase fw-bold" style="color: var(--color-primario);">Tu Bolsa de
+                Compras</h2>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="table-responsive bg-white p-4 rounded shadow-lg">
+                        <table class="table table-hover align-middle">
+                            <thead class="table-dark"
+                                style="background-color: var(--color-primario) !important; border-radius: 8px 8px 0 0;">
+                                <tr>
+                                    <th scope="col">Artículo</th>
+                                    <th scope="col" class="text-center">Cantidad</th>
+                                    <th scope="col" class="text-end">Precio Unitario</th>
+                                    <th scope="col" class="text-end">Total</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><i class="fas fa-tshirt me-2 text-info"></i> Vestido Maxi de Verano</td>
+                                    <td class="text-center">1</td>
+                                    <td class="text-end">$799.00</td>
+                                    <td class="text-end">$799.00</td>
+                                    <td><button class="btn btn-sm btn-outline-danger" title="Eliminar"><i
+                                                class="fas fa-trash-alt"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-gem me-2" style="color: var(--color-acento);"></i> Collar
+                                        Minimalista</td>
+                                    <td class="text-center">2</td>
+                                    <td class="text-end">$320.00</td>
+                                    <td class="text-end">$640.00</td>
+                                    <td><button class="btn btn-sm btn-outline-danger" title="Eliminar"><i
+                                                class="fas fa-trash-alt"></i></button></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr class="fw-bold fs-5">
+                                    <td colspan="3" class="text-end">Subtotal:</td>
+                                    <td class="text-end">$1,439.00</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="fw-bold fs-5 text-success">
+                                    <td colspan="3" class="text-end">Total:</td>
+                                    <td class="text-end">$1,439.00</td>
+                                    <td></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+                        <button class="btn btn-lg btn-outline-secondary me-md-2" type="button"><i
+                                class="fas fa-chevron-left me-1"></i> Seguir Comprando</button>
+                        <button class="btn btn-lg btn-success" type="button">Proceder al Pago <i
+                                class="fas fa-credit-card ms-1"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>

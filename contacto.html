@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Pagina</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Stack+Sans+Headline:wght@200..700&display=swap" rel="stylesheet">
+
+    <style>
+        label, 
+        input,
+        textarea {
+            display: block;
+        }
+    </style>
+    
+</head>
+<body>
+       <!--Barra de navegacioón-->
+    <header>
+        <nav id="navBar">
+            <img src="./assets/logo.png" alt="Logo del negocio" width="70">
+            <h1 id="mainTitle" class="pageTitle">Stargirl</h1>
+
+            <ul id="navLinks">
+                <li class="navBarItem"> <a href="./contacto.html">contacto</a></li>
+                <li class="navBarItem"> <a href="./productos.html">Productos</a> </li>
+                <li class="navBarItem"> <a href="./carrito.html">Carrito</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>¿Dudas, sugerencias o aclaraciones?</h2>
+        <p>Escribenos y con gusto te atendemos</p>
+    </section>
+
+    <main>
+        <form>
+            <label for="nombre">Nombre: </label>
+            <input id="nombre" type="text" placeholder="Primer Nombre">
+
+            <label for="apellido">Apellido: </label>
+            <input id="apellido" type="text" placeholder="Apellido Materno">
+
+            <label for="correo">Correo electronico</label>
+            <input id="correo" type="email" placeholder="Correo asociado a tu cuenta">
+
+            <label for="telefono">Telefono: </label>
+            <input id="telefono" type="tel" placeholder="Asociado a tu cuenta">
+
+            <label for="mensaje">Mensaje: </label>
+            <textarea id="mensaje" placeholder="Max. 200 caracteres">Texto de ejemplo</textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+       
+</body>
+
+</html>
